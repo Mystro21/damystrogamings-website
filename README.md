@@ -39,6 +39,24 @@ http://127.0.0.1:4173/
 - Vercel static deployment
 - GitHub Pages
 
+## GitHub Pages deployment
+
+This repository includes a GitHub Pages workflow at:
+
+```text
+.github/workflows/pages.yml
+```
+
+If GitHub Pages is enabled for this repository, pushes to `main` will deploy the
+static website automatically.
+
+In GitHub:
+
+1. Open the repository settings.
+2. Go to **Pages**.
+3. Set **Source** to **GitHub Actions**.
+4. Save, then run the Pages workflow or push a new commit.
+
 ## Fastest launch path
 
 1. Create a free Netlify account.
