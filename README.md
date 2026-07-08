@@ -29,8 +29,42 @@ http://127.0.0.1:4173/
 - Use `damystrogamings.com` as the public domain.
 - Enable HTTPS through the hosting provider.
 - Point both `damystrogamings.com` and `www.damystrogamings.com` to the site, with one redirecting to the other.
-- Review `/privacy/` before public launch.
+- Review `/privacy/` before public launch and before each App Store submission.
 - Do not add analytics, tracking, player accounts, Firebase, forms, or mailing lists without updating the privacy page.
+
+## App Store Connect URLs
+
+Use these once `damystrogamings.com` is connected and HTTPS is active:
+
+```text
+Company Support URL:
+https://damystrogamings.com/support/
+
+Company Privacy Policy URL:
+https://damystrogamings.com/privacy/
+
+Bank Co Support URL:
+https://damystrogamings.com/support/bank-co/
+
+Bank Co Privacy Policy URL:
+https://damystrogamings.com/privacy/bank-co/
+
+Da Conquer Support URL:
+https://damystrogamings.com/support/da-conquer/
+
+Da Conquer Privacy Policy URL:
+https://damystrogamings.com/privacy/da-conquer/
+
+Injera Be Wote Support URL:
+https://damystrogamings.com/support/injera-be-wote/
+
+Injera Be Wote Privacy Policy URL:
+https://damystrogamings.com/privacy/injera-be-wote/
+```
+
+Before submitting an app to Apple, make sure the privacy page for that app
+matches the exact app build, including any analytics, crash reporting, accounts,
+cloud saves, ads, Firebase services, or third-party SDKs.
 
 ## Good hosting choices
 
