@@ -361,9 +361,39 @@ h2 {
 .principles p,
 .timeline p,
 .education-copy p,
+.brand-direction p,
 .contact p {
   color: #645235;
   line-height: 1.72;
+}
+
+.brand-direction {
+  display: grid;
+  grid-template-columns: minmax(18rem, 0.82fr) 1fr;
+  gap: clamp(1.25rem, 4vw, 3rem);
+  align-items: center;
+  padding: 0 0 6rem;
+}
+
+.brand-direction img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 1px solid rgba(172, 116, 24, 0.36);
+  box-shadow: var(--shadow);
+}
+
+.brand-direction > div {
+  padding: clamp(1.5rem, 4vw, 3rem);
+  background:
+    linear-gradient(135deg, rgba(255, 248, 232, 0.98), rgba(255, 238, 202, 0.82)),
+    linear-gradient(90deg, rgba(7, 137, 48, 0.1), rgba(252, 209, 22, 0.14), rgba(218, 18, 26, 0.1));
+  border: 1px solid var(--line);
+}
+
+.brand-direction h2 {
+  max-width: 44rem;
 }
 
 .section-heading {
@@ -835,6 +865,7 @@ h2 {
   }
 
   .intro,
+  .brand-direction,
   .difference-inner,
   .education,
   .support-panel,
