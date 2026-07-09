@@ -1,17 +1,17 @@
 :root {
-  --ink: #080807;
-  --black: #0d0c0a;
-  --panel: #14120e;
-  --panel-2: #1b1711;
-  --gold: #d6a84b;
-  --gold-bright: #f0ce78;
-  --emerald: #063b30;
-  --emerald-2: #0b6048;
+  --ink: #12100b;
+  --black: #211b11;
+  --panel: #fff4dc;
+  --panel-2: #f7e4bd;
+  --gold: #d69b29;
+  --gold-bright: #ffe39b;
+  --emerald: #0d5847;
+  --emerald-2: #188062;
   --red: #8a2420;
-  --ivory: #f5edda;
-  --muted: #b8ad96;
-  --line: rgba(214, 168, 75, 0.24);
-  --shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+  --ivory: #fff9eb;
+  --muted: #6b5a3d;
+  --line: rgba(172, 116, 24, 0.28);
+  --shadow: 0 24px 60px rgba(80, 49, 6, 0.22);
 }
 
 * {
@@ -25,9 +25,10 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 10% 10%, rgba(13, 96, 72, 0.3), transparent 28rem),
-    linear-gradient(180deg, #080807 0%, #11100d 44%, #0b0a08 100%);
-  color: var(--ivory);
+    radial-gradient(circle at 12% 0%, rgba(255, 227, 155, 0.48), transparent 27rem),
+    radial-gradient(circle at 88% 18%, rgba(24, 128, 98, 0.18), transparent 26rem),
+    linear-gradient(180deg, #fff6e2 0%, #f7e8c7 45%, #fffaf0 100%);
+  color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -69,8 +70,8 @@ button:focus-visible {
   justify-content: space-between;
   gap: 1.5rem;
   padding: 1rem clamp(1rem, 4vw, 4rem);
-  background: rgba(8, 8, 7, 0.68);
-  border-bottom: 1px solid rgba(214, 168, 75, 0.16);
+  background: rgba(255, 248, 232, 0.84);
+  border-bottom: 1px solid rgba(172, 116, 24, 0.22);
   backdrop-filter: blur(18px);
 }
 
@@ -87,8 +88,8 @@ button:focus-visible {
   height: 2.85rem;
   place-items: center;
   border: 1px solid var(--line);
-  background: linear-gradient(145deg, rgba(214, 168, 75, 0.18), rgba(6, 59, 48, 0.35));
-  color: var(--gold-bright);
+  background: linear-gradient(145deg, rgba(255, 227, 155, 0.95), rgba(24, 128, 98, 0.24));
+  color: #32230b;
   font-family: Georgia, "Times New Roman", serif;
   font-weight: 800;
 }
@@ -108,7 +109,7 @@ button:focus-visible {
 nav {
   display: flex;
   gap: clamp(0.8rem, 2.4vw, 2rem);
-  color: #dfd3b8;
+  color: #4b3b22;
   font-size: 0.88rem;
   font-weight: 700;
 }
@@ -133,7 +134,8 @@ nav a:hover {
   justify-content: center;
   padding: 0.65rem 0.9rem;
   border: 1px solid var(--line);
-  color: var(--gold-bright);
+  background: rgba(255, 255, 255, 0.58);
+  color: #4b3512;
   cursor: pointer;
   font-weight: 900;
   list-style: none;
@@ -150,14 +152,14 @@ nav a:hover {
   display: grid;
   min-width: 13rem;
   padding: 0.65rem;
-  background: rgba(8, 8, 7, 0.96);
+  background: rgba(255, 248, 232, 0.98);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
 }
 
 .mobile-menu a {
   padding: 0.8rem 0.9rem;
-  color: var(--ivory);
+  color: var(--ink);
   text-decoration: none;
   font-weight: 800;
 }
@@ -186,14 +188,14 @@ nav a:hover {
   background-image: url("assets/home-hero.jpg");
   background-position: center right;
   background-size: cover;
-  opacity: 0.94;
+  opacity: 0.9;
   transform: scale(1.02);
 }
 
 .hero-overlay {
   background:
-    linear-gradient(90deg, rgba(8, 8, 7, 0.92) 0%, rgba(8, 8, 7, 0.68) 42%, rgba(8, 8, 7, 0.12) 100%),
-    linear-gradient(180deg, rgba(8, 8, 7, 0), rgba(8, 8, 7, 0.82));
+    linear-gradient(90deg, rgba(255, 246, 226, 0.9) 0%, rgba(255, 246, 226, 0.68) 42%, rgba(255, 246, 226, 0.06) 100%),
+    linear-gradient(180deg, rgba(8, 8, 7, 0.1), rgba(255, 250, 240, 0.75));
 }
 
 .hero-content {
@@ -204,7 +206,7 @@ nav a:hover {
 
 .eyebrow {
   margin: 0 0 0.9rem;
-  color: var(--gold-bright);
+  color: #a86d00;
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.14em;
@@ -231,7 +233,7 @@ h1 {
 .hero-copy {
   max-width: 42rem;
   margin: 1.4rem 0 0;
-  color: #e5dac2;
+  color: #3f321d;
   font-size: clamp(1.05rem, 1.6vw, 1.3rem);
   line-height: 1.7;
 }
@@ -250,19 +252,26 @@ h1 {
   justify-content: center;
   padding: 0.85rem 1.25rem;
   border: 1px solid var(--line);
-  color: var(--ivory);
+  color: var(--ink);
   font-weight: 800;
   text-decoration: none;
 }
 
 .button.primary {
-  background: linear-gradient(135deg, var(--gold), #7b541e);
+  background: linear-gradient(135deg, #ffd66d, #d18c1d);
   color: #151008;
   border-color: rgba(240, 206, 120, 0.7);
 }
 
 .button.ghost {
-  background: rgba(6, 59, 48, 0.42);
+  background: rgba(255, 255, 255, 0.58);
+  border-color: rgba(13, 88, 71, 0.35);
+}
+
+.button.disabled {
+  background: rgba(255, 255, 255, 0.56);
+  color: var(--muted);
+  cursor: not-allowed;
 }
 
 .hero-panel {
@@ -272,7 +281,7 @@ h1 {
   bottom: 3rem;
   width: min(22rem, calc(100vw - 2rem));
   padding: 1.25rem;
-  background: rgba(13, 12, 10, 0.72);
+  background: rgba(255, 249, 235, 0.82);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   backdrop-filter: blur(18px);
@@ -286,7 +295,7 @@ h1 {
 .hero-panel strong {
   display: block;
   margin: 0.25rem 0 0.55rem;
-  color: var(--gold-bright);
+  color: #8c5a00;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.7rem;
 }
@@ -319,7 +328,7 @@ h2 {
 .timeline p,
 .education-copy p,
 .contact p {
-  color: var(--muted);
+  color: #645235;
   line-height: 1.72;
 }
 
@@ -344,21 +353,21 @@ h2 {
   flex-direction: column;
   padding: 1.25rem;
   background:
-    linear-gradient(180deg, rgba(20, 18, 14, 0.96), rgba(12, 11, 9, 0.98)),
-    radial-gradient(circle at top right, rgba(214, 168, 75, 0.2), transparent 14rem);
-  border: 1px solid rgba(214, 168, 75, 0.18);
+    linear-gradient(180deg, rgba(255, 248, 232, 0.96), rgba(247, 228, 189, 0.92)),
+    radial-gradient(circle at top right, rgba(255, 214, 109, 0.36), transparent 14rem);
+  border: 1px solid rgba(172, 116, 24, 0.22);
   box-shadow: 0 18px 38px rgba(0, 0, 0, 0.24);
 }
 
 .game-card.featured {
   background:
-    linear-gradient(180deg, rgba(6, 59, 48, 0.82), rgba(12, 11, 9, 0.98)),
-    radial-gradient(circle at top right, rgba(240, 206, 120, 0.3), transparent 13rem);
+    linear-gradient(180deg, rgba(225, 247, 232, 0.96), rgba(255, 246, 226, 0.95)),
+    radial-gradient(circle at top right, rgba(255, 214, 109, 0.42), transparent 13rem);
 }
 
 .game-card.mythic {
   background:
-    linear-gradient(180deg, rgba(44, 20, 20, 0.68), rgba(12, 11, 9, 0.98)),
+    linear-gradient(180deg, rgba(255, 234, 223, 0.96), rgba(255, 246, 226, 0.95)),
     radial-gradient(circle at top right, rgba(214, 168, 75, 0.25), transparent 13rem);
 }
 
@@ -375,28 +384,40 @@ h2 {
 }
 
 .game-topline b {
-  color: var(--gold-bright);
+  color: #8c5a00;
   font-size: 0.82rem;
 }
 
 .game-card h3 {
   margin-top: 2.25rem;
-  color: #fff8e8;
+  color: #251b0b;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.8rem;
 }
 
-.game-card a {
+.game-card a,
+.card-actions a {
   margin-top: auto;
-  color: var(--gold-bright);
+  color: #7a4e00;
   font-weight: 800;
   text-decoration: none;
 }
 
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: auto;
+}
+
+.card-actions a {
+  margin-top: 0;
+}
+
 .difference {
   background:
-    linear-gradient(90deg, rgba(6, 59, 48, 0.82), rgba(8, 8, 7, 0.96)),
-    repeating-linear-gradient(135deg, rgba(214, 168, 75, 0.08) 0 1px, transparent 1px 24px);
+    linear-gradient(90deg, rgba(225, 247, 232, 0.98), rgba(255, 246, 226, 0.98)),
+    repeating-linear-gradient(135deg, rgba(214, 168, 75, 0.12) 0 1px, transparent 1px 24px);
   border-block: 1px solid rgba(214, 168, 75, 0.2);
 }
 
@@ -416,14 +437,14 @@ h2 {
 .timeline article,
 .callout {
   padding: 1.25rem;
-  background: rgba(13, 12, 10, 0.74);
+  background: rgba(255, 249, 235, 0.82);
   border: 1px solid var(--line);
 }
 
 .principles span,
 .timeline span,
 .callout span {
-  color: var(--gold-bright);
+  color: #8c5a00;
   font-weight: 900;
 }
 
@@ -458,7 +479,7 @@ h2 {
 .education-copy,
 .callout {
   padding: clamp(1.5rem, 4vw, 3rem);
-  background: linear-gradient(135deg, rgba(20, 18, 14, 0.96), rgba(6, 59, 48, 0.45));
+  background: linear-gradient(135deg, rgba(255, 248, 232, 0.96), rgba(225, 247, 232, 0.78));
   border: 1px solid var(--line);
 }
 
@@ -477,7 +498,7 @@ h2 {
 
 .contact {
   padding: 6rem 0;
-  background: #080807;
+  background: #fff6e2;
   border-top: 1px solid rgba(214, 168, 75, 0.18);
 }
 
@@ -492,7 +513,7 @@ h2 {
 
 .site-footer {
   padding: 2rem 0;
-  background: #060604;
+  background: #f4dfb6;
   border-top: 1px solid rgba(214, 168, 75, 0.18);
 }
 
@@ -529,7 +550,7 @@ h2 {
 
 .page-hero p {
   max-width: 48rem;
-  color: var(--muted);
+  color: #645235;
   font-size: 1.12rem;
   line-height: 1.72;
 }
@@ -544,7 +565,7 @@ h2 {
 .support-panel > div,
 .legal-content article {
   padding: clamp(1.5rem, 4vw, 2.5rem);
-  background: linear-gradient(135deg, rgba(20, 18, 14, 0.96), rgba(6, 59, 48, 0.38));
+  background: linear-gradient(135deg, rgba(255, 248, 232, 0.96), rgba(225, 247, 232, 0.72));
   border: 1px solid var(--line);
 }
 
@@ -555,7 +576,7 @@ h2 {
 
 .support-panel p,
 .legal-content p {
-  color: var(--muted);
+  color: #645235;
   line-height: 1.72;
 }
 
@@ -576,7 +597,7 @@ h2 {
 }
 
 .legal-content a {
-  color: var(--gold-bright);
+  color: #7a4e00;
   font-weight: 800;
 }
 
@@ -593,8 +614,8 @@ h2 {
   align-items: start;
   padding: clamp(1.5rem, 4vw, 3rem);
   background:
-    linear-gradient(135deg, rgba(20, 18, 14, 0.96), rgba(6, 59, 48, 0.28)),
-    radial-gradient(circle at top right, rgba(214, 168, 75, 0.14), transparent 18rem);
+    linear-gradient(135deg, rgba(255, 248, 232, 0.98), rgba(225, 247, 232, 0.64)),
+    radial-gradient(circle at top right, rgba(255, 214, 109, 0.24), transparent 18rem);
   border: 1px solid var(--line);
   box-shadow: 0 18px 38px rgba(0, 0, 0, 0.2);
   scroll-margin-top: 7rem;
@@ -602,13 +623,13 @@ h2 {
 
 .game-detail.featured {
   background:
-    linear-gradient(135deg, rgba(6, 59, 48, 0.86), rgba(14, 12, 9, 0.98)),
-    radial-gradient(circle at top right, rgba(240, 206, 120, 0.22), transparent 18rem);
+    linear-gradient(135deg, rgba(225, 247, 232, 0.98), rgba(255, 248, 232, 0.98)),
+    radial-gradient(circle at top right, rgba(255, 214, 109, 0.32), transparent 18rem);
 }
 
 .game-detail.mythic {
   background:
-    linear-gradient(135deg, rgba(44, 20, 20, 0.7), rgba(14, 12, 9, 0.98)),
+    linear-gradient(135deg, rgba(255, 234, 223, 0.96), rgba(255, 248, 232, 0.98)),
     radial-gradient(circle at top right, rgba(214, 168, 75, 0.18), transparent 18rem);
 }
 
@@ -619,8 +640,8 @@ h2 {
   justify-content: center;
   padding: 0.75rem 1rem;
   border: 1px solid rgba(240, 206, 120, 0.45);
-  background: rgba(8, 8, 7, 0.54);
-  color: var(--gold-bright);
+  background: rgba(255, 255, 255, 0.62);
+  color: #8c5a00;
   font-size: 0.8rem;
   font-weight: 900;
   text-align: center;
@@ -633,7 +654,7 @@ h2 {
 
 .game-detail p {
   max-width: 48rem;
-  color: var(--muted);
+  color: #645235;
   font-size: 1.06rem;
   line-height: 1.72;
 }
@@ -643,7 +664,7 @@ h2 {
   gap: 0.65rem;
   margin: 1.4rem 0 0;
   padding: 0;
-  color: #d9cdb2;
+  color: #4d3f27;
   list-style: none;
 }
 
@@ -656,9 +677,39 @@ h2 {
 .fact-list li::before {
   position: absolute;
   left: 0;
-  color: var(--gold-bright);
+  color: #a86d00;
   content: "/";
   font-weight: 900;
+}
+
+.game-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.game-actions .button {
+  min-height: 2.9rem;
+  padding: 0.7rem 1rem;
+}
+
+.handoff-note {
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: start;
+  padding: 0 0 4rem;
+}
+
+.handoff-note p {
+  color: #645235;
+  line-height: 1.72;
+}
+
+.handoff-note code {
+  color: #8c5a00;
+  font-size: 0.95em;
 }
 
 @media (max-width: 950px) {
@@ -695,7 +746,8 @@ h2 {
   .difference-inner,
   .education,
   .support-panel,
-  .game-detail {
+  .game-detail,
+  .handoff-note {
     grid-template-columns: 1fr;
   }
 
@@ -712,8 +764,8 @@ h2 {
 
   .hero-overlay {
     background:
-      linear-gradient(180deg, rgba(8, 8, 7, 0.82), rgba(8, 8, 7, 0.96)),
-      linear-gradient(90deg, rgba(8, 8, 7, 0.9), rgba(8, 8, 7, 0.45));
+      linear-gradient(180deg, rgba(255, 246, 226, 0.9), rgba(255, 250, 240, 0.96)),
+      linear-gradient(90deg, rgba(255, 246, 226, 0.9), rgba(255, 246, 226, 0.48));
   }
 
   .hero-actions,
