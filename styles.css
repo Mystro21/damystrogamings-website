@@ -362,6 +362,7 @@ h2 {
 .timeline p,
 .education-copy p,
 .brand-direction p,
+.story-panel p,
 .contact p {
   color: #645235;
   line-height: 1.72;
@@ -556,6 +557,71 @@ h2 {
 
 .timeline article {
   min-height: 16rem;
+}
+
+.story-panel,
+.mission-vision {
+  display: grid;
+  gap: clamp(1.25rem, 4vw, 3rem);
+}
+
+.story-panel {
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  padding: 0 0 6rem;
+}
+
+.story-panel > div,
+.story-panel > p,
+.mission-vision article {
+  padding: clamp(1.5rem, 4vw, 3rem);
+  background:
+    linear-gradient(135deg, rgba(255, 248, 232, 0.98), rgba(225, 247, 232, 0.68)),
+    radial-gradient(circle at top right, rgba(252, 209, 22, 0.18), transparent 15rem);
+  border: 1px solid var(--line);
+}
+
+.portfolio-overview {
+  padding-bottom: 6rem;
+}
+
+.mini-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.mini-card-grid article {
+  min-height: 14rem;
+  padding: 1.25rem;
+  background: rgba(255, 249, 235, 0.86);
+  border: 1px solid var(--line);
+}
+
+.mini-card-grid span {
+  display: block;
+  color: #8c5a00;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+  font-weight: 800;
+}
+
+.mini-card-grid p {
+  color: #645235;
+  line-height: 1.62;
+}
+
+.values-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mission-vision {
+  grid-template-columns: repeat(2, 1fr);
+  padding: 6rem 0;
+}
+
+.mission-vision h2 {
+  font-size: clamp(1.8rem, 3.4vw, 3.2rem);
 }
 
 .education {
@@ -884,6 +950,8 @@ h2 {
 
   .intro,
   .brand-direction,
+  .story-panel,
+  .mission-vision,
   .difference-inner,
   .education,
   .support-panel,
@@ -894,7 +962,9 @@ h2 {
   }
 
   .game-grid,
-  .timeline {
+  .timeline,
+  .mini-card-grid,
+  .values-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -916,7 +986,10 @@ h2 {
   }
 
   .game-grid,
-  .timeline {
+  .timeline,
+  .mini-card-grid,
+  .values-grid,
+  .mission-vision {
     grid-template-columns: 1fr;
   }
 
