@@ -24,9 +24,9 @@
   <path d="M0 0h960v540H0z" fill="#0c0a05" opacity="0.1"/>
 
   <g filter="url(#softShadow)">
-    <circle cx="480" cy="270" r="126" fill="#10251d" stroke="#f7d461" stroke-width="14"/>
-    <circle cx="480" cy="270" r="105" fill="none" stroke="#fff0a8" stroke-width="3" opacity="0.8"/>
-    <path d="M397 317H563" stroke="#f7d461" stroke-width="4" opacity="0.65"/>
+    <circle cx="480" cy="270" r="126" fill="#f6dc8b" stroke="#173a2d" stroke-width="14"/>
+    <circle cx="480" cy="270" r="105" fill="none" stroke="#8a6115" stroke-width="3" opacity="0.72"/>
+    <path d="M397 317H563" stroke="#173a2d" stroke-width="4" opacity="0.5"/>
     <text
       x="480"
       y="301"
@@ -40,7 +40,7 @@
     <text
       x="480"
       y="347"
-      fill="#fff0a8"
+      fill="#173a2d"
       font-family="Arial, sans-serif"
       font-size="18"
       font-weight="700"
