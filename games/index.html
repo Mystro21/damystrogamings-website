@@ -89,9 +89,9 @@
               <li>Play both levels online, with House Rivals available when no human opponent joins.</li><li>Online tables use virtual chips, timed turns, wins, and losses. Chips cannot be purchased or redeemed for money or real-world prizes.</li>
             </ul>
             <p>Web game updated September 24, 2026: Level 2, Royal Arena, and Google sign-in are live.</p><div class="game-actions" aria-label="Capture Da King actions">
-              <a class="button primary" href="https://play.google.com/store/apps/details?id=com.damystrogamings.capturetheking">Get it on Google Play</a>
-              <a class="button primary" href="https://apps.apple.com/app/id6797637624">Download on the App Store</a>
-              <a class="button ghost" href="https://capture-da-king.web.app/">Play in your browser</a>
+              <a class="button primary" href="https://play.google.com/store/apps/details?id=com.damystrogamings.capturetheking" data-analytics-game="capture_da_king" data-analytics-destination="google_play" data-analytics-placement="games_detail">Get it on Google Play</a>
+              <a class="button primary" href="https://apps.apple.com/app/id6797637624" data-analytics-game="capture_da_king" data-analytics-destination="apple_app_store" data-analytics-placement="games_detail">Download on the App Store</a>
+              <a class="button ghost" href="https://capture-da-king.web.app/" data-analytics-game="capture_da_king" data-analytics-destination="browser" data-analytics-placement="games_detail">Play in your browser</a>
               <p>Store availability varies by country. The iOS listing currently appears as Capture the King. Browser and store editions may have different features.</p>
             </div>
           </div>
@@ -247,5 +247,18 @@
         </nav>
       </div>
     </footer>
+    <section class="analytics-consent" data-analytics-consent aria-labelledby="analytics-consent-title" hidden>
+      <h2 id="analytics-consent-title">Optional analytics</h2>
+      <p>With your permission, we use Google Analytics to understand visits and game-link clicks. You can use the site without it. <a href="/privacy/">Privacy details</a></p>
+      <div class="analytics-consent-actions">
+        <button type="button" data-consent-choice="granted">Accept analytics</button>
+        <button type="button" data-consent-choice="denied">Reject / withdraw analytics</button>
+      </div>
+    </section>
+    <div class="analytics-preferences">
+      <button type="button" data-analytics-settings>Analytics preferences</button>
+      <span data-analytics-status role="status"></span>
+    </div>
+    <script src="/assets/dmg-analytics.v1.js" defer></script>
   </body>
 </html>

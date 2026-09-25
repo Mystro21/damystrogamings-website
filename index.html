@@ -132,7 +132,7 @@
               Play Classic or Level 2 with local opponents, AI, and online matches. Sign in with Google through DMG Account.
             </p>
             <div class="card-actions">
-              <a href="https://capture-da-king.web.app/">Play latest version</a>
+              <a href="https://capture-da-king.web.app/" data-analytics-game="capture_da_king" data-analytics-destination="browser" data-analytics-placement="home_feature">Play latest version</a>
               <a href="/games/#capture-the-king">View game</a>
             </div>
           </article>
@@ -310,5 +310,18 @@
         </nav>
       </div>
     </footer>
+    <section class="analytics-consent" data-analytics-consent aria-labelledby="analytics-consent-title" hidden>
+      <h2 id="analytics-consent-title">Optional analytics</h2>
+      <p>With your permission, we use Google Analytics to understand visits and game-link clicks. You can use the site without it. <a href="/privacy/">Privacy details</a></p>
+      <div class="analytics-consent-actions">
+        <button type="button" data-consent-choice="granted">Accept analytics</button>
+        <button type="button" data-consent-choice="denied">Reject / withdraw analytics</button>
+      </div>
+    </section>
+    <div class="analytics-preferences">
+      <button type="button" data-analytics-settings>Analytics preferences</button>
+      <span data-analytics-status role="status"></span>
+    </div>
+    <script src="/assets/dmg-analytics.v1.js" defer></script>
   </body>
 </html>
