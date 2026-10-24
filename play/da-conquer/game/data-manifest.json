@@ -1,0 +1,67 @@
+{
+  "compression": "gzip",
+  "bytes": 186494959,
+  "sha256": "af06dbc0ca5a6139ca1381f1530810a7e0a04a4bb1d546e218a1803c879c33c2",
+  "parts": [
+    {
+      "url": "Data/data-00-8d762cb28eee.bin",
+      "bytes": 16777216,
+      "sha256": "8d762cb28eee8c80b772f6676acb6aada12bd80fec780761dd57667af9e9abce"
+    },
+    {
+      "url": "Data/data-01-d3ec7a147dcc.bin",
+      "bytes": 16777216,
+      "sha256": "d3ec7a147dcc11a93f855750f2ac6de2aa0abea83dab2bb20b77c510118b67d2"
+    },
+    {
+      "url": "Data/data-02-9c7e9cf91e7f.bin",
+      "bytes": 16777216,
+      "sha256": "9c7e9cf91e7f6fa4e7275d6878a8871cf8cbec5450b65a5e157b686bce3a8c9a"
+    },
+    {
+      "url": "Data/data-03-cfe0ce8b19d0.bin",
+      "bytes": 16777216,
+      "sha256": "cfe0ce8b19d024859313a63ba7a61a42e04b7290fc184b5655dd3f230a2118d0"
+    },
+    {
+      "url": "Data/data-04-ff62c91bdf6d.bin",
+      "bytes": 16777216,
+      "sha256": "ff62c91bdf6d84f5c6a06641d645696eba6ccfda9b07ec44e24d5f250d5c5c34"
+    },
+    {
+      "url": "Data/data-05-687f74f933dd.bin",
+      "bytes": 16777216,
+      "sha256": "687f74f933dd20f30bea145c72cb148c528fee4939fa73675dceafa1a78333a9"
+    },
+    {
+      "url": "Data/data-06-1215757845aa.bin",
+      "bytes": 16777216,
+      "sha256": "1215757845aa8bc87447495b330ece323f3fee2fcfb89835e09e94d59798525e"
+    },
+    {
+      "url": "Data/data-07-5ef342902d5f.bin",
+      "bytes": 16777216,
+      "sha256": "5ef342902d5fc6fbc19abf3b982476eca6ae770092fbbb5e0d2f2753346d5b64"
+    },
+    {
+      "url": "Data/data-08-910355018051.bin",
+      "bytes": 16777216,
+      "sha256": "910355018051f18a9bba0a4ef9ec2eb6da4bb9f8ef27c94760c57d599efec768"
+    },
+    {
+      "url": "Data/data-09-823bea7245af.bin",
+      "bytes": 16777216,
+      "sha256": "823bea7245af9bbbd9f128a7f44cc4ffcba25f199038e3735540e0ed0f03cd81"
+    },
+    {
+      "url": "Data/data-10-3fa08bdada11.bin",
+      "bytes": 16777216,
+      "sha256": "3fa08bdada11741605400ec06529ce07daade687872e7932f52ddb4a29ddf811"
+    },
+    {
+      "url": "Data/data-11-c8b6f65e4817.bin",
+      "bytes": 1945583,
+      "sha256": "c8b6f65e4817e2c61d3ebc821f487be2db3838e3b25e0ffab145a246f3270ab3"
+    }
+  ]
+}

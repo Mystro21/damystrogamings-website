@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a23">
+  <title>Play Da Conquer | Da Mystro Gamings</title>
+  <meta name="description" content="Play the Da Conquer browser test against the computer. Try Da Sayka, Da Conquer, and Da Meskel.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#0a1915;color:#f4ead1;font:16px/1.5 system-ui,sans-serif}
+    header,main,footer{max-width:1440px;margin:auto;padding:16px 24px}header{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #345045}
+    a{color:#e9c777}header a{text-decoration:none}h1{font-size:24px;margin:0}.tag{font-size:12px;letter-spacing:.08em;color:#e9c777;text-transform:uppercase}
+    .intro{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:16px}.intro p{margin:4px 0;color:#d2d9d1}
+    button{border:1px solid #e9c777;border-radius:6px;background:#e9c777;color:#102a23;font:600 16px system-ui;padding:12px 20px;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid white;outline-offset:4px}
+    #stage{position:relative;height:min(78vh,900px);min-height:440px;background:#102a23;border:1px solid #52725e;border-radius:10px;overflow:hidden;display:grid;place-items:center}
+    #stage:fullscreen{height:100vh;border:0;border-radius:0}iframe{position:absolute;inset:0;margin:auto;width:100%;height:100%;border:0;display:block}.controls{display:flex;gap:8px;flex-wrap:wrap}.launch{text-align:center;padding:28px;max-width:560px}.launch h2{font-size:30px;margin:0 0 12px}.launch p{color:#d2d9d1}
+    .notes{display:flex;gap:30px;flex-wrap:wrap;padding-top:18px}.notes p{max-width:620px;margin:0;color:#c8d4ca;font-size:14px}footer{font-size:14px;color:#b5c5ba}footer a{margin-right:20px}
+    @media(max-width:650px){header,main,footer{padding:14px}.intro{align-items:flex-start}.intro p{font-size:14px}h1{font-size:21px}#stage{height:75vh;min-height:500px}.intro button{font-size:14px;padding:10px}}
+  </style>
+</head>
+<body>
+  <header><a href="/">Da Mystro Gamings</a><a href="/games/#da-conquer">Back to games</a></header>
+  <main>
+    <div class="intro"><div><div class="tag">Browser playtest · October 24, 2026</div><h1>Da Conquer</h1><p>Three tables. Play against the computer. Use tall view for Da Sayka.</p></div><div class="controls"><button id="view" type="button" aria-pressed="false">Tall view</button><button id="fullscreen" type="button">Full screen</button></div></div>
+    <section id="stage" aria-label="Da Conquer game">
+      <div class="launch" id="launch"><h2>Choose your table</h2><p>Da Sayka · Da Conquer · Da Meskel</p><p>The first load downloads the game. A desktop browser works best; use full screen for more room.</p><button id="play" type="button">Load game</button><p id="load-status" role="status"></p></div>
+    </section>
+    <div class="notes"><p><strong>Solo browser test.</strong> Online multiplayer, account sign-in, purchases, and mobile save syncing are unavailable in this edition. Points and progress belong to this browser. If the optional account panel opens, choose Return to keep playing.</p><p><strong>Report a bug:</strong> include the table, your last move, what you expected, and a screenshot. This browser test includes newer changes than the current mobile test builds.</p></div>
+  </main>
+  <footer><a href="/support/da-conquer/">Support</a><a href="/privacy/da-conquer/">Privacy</a>© Da Mystro Gamings LLC</footer>
+  <script>
+    const stage=document.getElementById('stage');
+    const fit=()=>{const frame=stage.querySelector('iframe');if(frame){frame.style.width=stage.classList.contains('tall')?Math.min(stage.clientWidth,stage.clientHeight*9/16)+'px':'100%';frame.style.height='100%';}};
+    new ResizeObserver(fit).observe(stage);
+    document.getElementById('view').addEventListener('click',event=>{const tall=stage.classList.toggle('tall');event.currentTarget.textContent=tall?'Wide view':'Tall view';event.currentTarget.setAttribute('aria-pressed',String(tall));fit();});
+    document.getElementById('play').addEventListener('click',()=>{
+      const frame=document.createElement('iframe');frame.title='Da Conquer browser game';frame.allow='fullscreen; autoplay';frame.src='./game/';
+      document.getElementById('load-status').textContent='Loading game…';
+      frame.addEventListener('load',()=>document.getElementById('launch')?.remove());
+      stage.appendChild(frame);fit();document.getElementById('launch').remove();
+    },{once:true});
+    document.getElementById('fullscreen').addEventListener('click',async()=>{
+      try{if(document.fullscreenElement)await document.exitFullscreen();else await stage.requestFullscreen();}
+      catch{document.getElementById('fullscreen').textContent='Use browser full screen';}
+    });
+  </script>
+</body>
+</html>
